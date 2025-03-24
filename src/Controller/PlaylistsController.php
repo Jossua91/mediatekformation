@@ -32,7 +32,9 @@ class PlaylistsController extends AbstractController {
      * 
      * @var CategorieRepository
      */
-    private $categorieRepository;    
+    private $categorieRepository;
+    
+    private const PLAYLISTS_PATH = "pages/playlists.html.twig";
     
     function __construct(PlaylistRepository $playlistRepository, 
             CategorieRepository $categorieRepository,
@@ -50,7 +52,7 @@ class PlaylistsController extends AbstractController {
     public function index(): Response{
         $playlists = $this->playlistRepository->findAllOrderByName('ASC');
         $categories = $this->categorieRepository->findAll();
-        return $this->render("pages/playlists.html.twig", [
+        return $this->render(self::PLAYLISTS_PATH, [
             'playlists' => $playlists,
             'categories' => $categories            
         ]);
@@ -62,9 +64,11 @@ class PlaylistsController extends AbstractController {
             case "name":
                 $playlists = $this->playlistRepository->findAllOrderByName($ordre);
                 break;
+            default:
+                break;
         }
         $categories = $this->categorieRepository->findAll();
-        return $this->render("pages/playlists.html.twig", [
+        return $this->render(self::PLAYLISTS_PATH, [
             'playlists' => $playlists,
             'categories' => $categories            
         ]);
@@ -75,7 +79,7 @@ class PlaylistsController extends AbstractController {
         $valeur = $request->get("recherche");
         $playlists = $this->playlistRepository->findByContainValue($champ, $valeur, $table);
         $categories = $this->categorieRepository->findAll();
-        return $this->render("pages/playlists.html.twig", [
+        return $this->render(self::PLAYLISTS_PATH, [
             'playlists' => $playlists,
             'categories' => $categories,            
             'valeur' => $valeur,
