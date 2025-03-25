@@ -52,9 +52,10 @@ class PlaylistsController extends AbstractController {
     public function index(): Response{
         $playlists = $this->playlistRepository->findAllOrderByName('ASC');
         $categories = $this->categorieRepository->findAll();
+        
         return $this->render(self::PLAYLISTS_PATH, [
             'playlists' => $playlists,
-            'categories' => $categories            
+            'categories' => $categories
         ]);
     }
 
@@ -63,6 +64,9 @@ class PlaylistsController extends AbstractController {
         switch($champ){
             case "name":
                 $playlists = $this->playlistRepository->findAllOrderByName($ordre);
+                break;
+            case "nbFormations":
+                $playlists = $this->playlistRepository->findAllOrderByNbFormations($ordre);
                 break;
             default:
                 break;
@@ -97,6 +101,5 @@ class PlaylistsController extends AbstractController {
             'playlistcategories' => $playlistCategories,
             'playlistformations' => $playlistFormations
         ]);        
-    }       
-    
+    }
 }
