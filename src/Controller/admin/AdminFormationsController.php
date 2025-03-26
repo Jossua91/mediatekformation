@@ -69,7 +69,7 @@ class AdminFormationsController extends AbstractController {
         ]);
     }
     
-    #[Route('/admin/formations/formation/add', name: 'admin.formation.add')]
+    #[Route('/admin/formations/formation/add', name: 'admin.formations.add')]
     public function add(Request $request): Response{
         $formation = new Formation();
         $formFormation = $this->createForm(FormationType::class, $formation);
@@ -86,7 +86,7 @@ class AdminFormationsController extends AbstractController {
         ]);
     }
     
-    #[Route('/admin/formations/formation/{id}/edit', name: 'admin.formation.edit')]
+    #[Route('/admin/formations/formation/{id}/edit', name: 'admin.formations.edit')]
     public function edit($id, Request $request): Response{
         $formation = $this->formationRepository->find($id);
         $formFormation = $this->createForm(FormationType::class, $formation);

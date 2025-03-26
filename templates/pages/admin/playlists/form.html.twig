@@ -1,0 +1,49 @@
+{% block body %}
+    <div class="container mt-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                {{ form_start(formplaylist, {'attr': {'class': 'needs-validation'}}) }}
+
+                <div class="row">
+                    <div class="mb-3">
+                        {{ form_row(formplaylist.name, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    
+                    <div class="mb-3">
+                        {{ form_row(formplaylist.description, {'attr': {'class': 'form-control', 'rows': '5'}}) }}
+                    </div>
+                </div>
+                
+                {{ form_end(formplaylist) }}
+
+                {% if playlistformations %}
+                    <div class="row">
+                        <div class="col">
+                            <strong>Formations dans cette Playlist :</strong>
+                            <ul>
+                               {% for formation in playlistformations %}
+                                <div class="row mt-1">
+                                    <div class="col-md-auto">
+                                        {% if formation.miniature %}
+                                            <a href="{{ path('formations.showone', {id:formation.id}) }}">
+                                                <img src="{{ formation.miniature }}">
+                                            </a>
+                                        {% endif %}  
+                                    </div>
+                                    <div class="col d-flex align-items-center">
+                                        <a href="{{ path('formations.showone', {id:formation.id}) }}" 
+                                           class="link-secondary text-decoration-none">
+                                            {{ formation.title }}
+                                        </a>          
+                                    </div>
+                                </div>
+                                        <li>{{ formation.title }}</li>
+                            {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
