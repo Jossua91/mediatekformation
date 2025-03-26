@@ -1,0 +1,58 @@
+{% block body %}
+    <div class="container mt-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                {{ form_start(formformation, {'attr': {'class': 'needs-validation'}}) }}
+
+                <div class="row">
+                    <div class="col-md-full">
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-auto">
+                                    {{ form_row(formformation.publishedAt, {'attr': {'class': 'form-control'}}) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            {{ form_row(formformation.title, {'attr': {'class': 'form-control'}}) }}
+                        </div>
+                        
+                        <div class="mb-3">
+                            {{ form_row(formformation.playlist, {'attr': {'class': 'form-control'}}) }}
+                        </div>
+
+                        <div class="mb-3">
+                            {{ form_row(formformation.categories, {
+                                'attr': {'class': 'form-select select2'}
+                            }) }}
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        {% if formation.videoId %}
+                            <div class="ratio ratio-16x9">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/{{ formation.videoId }}" 
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" 
+                                    allowfullscreen 
+                                    class="rounded">
+                                </iframe>
+                            </div>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="mb-3">
+                        {{ form_row(formformation.description, {'attr': {'class': 'form-control', 'rows': '5'}}) }}
+                    </div>
+
+                    <div class="mb-3">
+                        {{ form_row(formformation.videoId, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+
+                {{ form_end(formformation) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
