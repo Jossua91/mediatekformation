@@ -1,13 +1,15 @@
 {% extends "baseadmin.html.twig" %}
 {% block body %}
-    <p class="text-end">
-        <a href="{{ path('admin.playlists.add') }}" class="btn btn-primary mt-2">
+    <div class="d-flex p-3 justify-content-between align-items-center">
+        <p>Liste des playlists :</p>
+
+        <a href="{{ path('admin.playlists.add') }}" class="btn btn-primary">
            Ajouter une nouvelle playlist
         </a>
-    </p>
+    </div>
 
     <table class="table table-striped">
-        <caption>Liste des playlists disponibles :</caption>
+        <caption></caption>
         <thead>
             <tr>
                 <th class="text-left align-top" scope="col">

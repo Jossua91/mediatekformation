@@ -1,13 +1,14 @@
 {% extends "baseadmin.html.twig" %}
 {% block body %}
-    <p class="text-end">
-        <a href="{{ path('admin.formations.add') }}" class="btn btn-primary mt-2">
-           Ajouter une nouvelle formation
+    <div class="d-flex p-3 justify-content-between align-items-center">
+        <p>Liste des formations :</p>
+        <a href="{{ path('admin.formations.add') }}" class="btn btn-primary">
+           Ajouter une formation
         </a>
-    </p>
+    </div>
 
     <table class="table table-striped">
-        <caption>Liste des formations disponibles :</caption>
+        <caption></caption>
         <thead>
             <tr>
                 <th class="text-left align-top" scope="col">
