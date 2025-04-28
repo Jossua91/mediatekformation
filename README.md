@@ -1,4 +1,4 @@
-# Mediatekformation
+# Mediatekformation - Partie utilisateur
 ## Présentation
 Ce site, développé avec Symfony 6.4, permet d'accéder aux vidéos d'auto-formation proposées par une chaîne de médiathèques et qui sont aussi accessibles sur YouTube.<br> 
 Actuellement, seule la partie front office a été développée. Elle contient les fonctionnalités globales suivantes :<br>
@@ -53,6 +53,8 @@ La partie centrale est séparée en 2 parties :<br>
 •	La partie gauche contient les informations de la playlist (titre, liste des catégories, description).<br>
 •	La partie droite contient la liste des formations contenues dans la playlist (miniature et titre) avec possibilité de cliquer sur une formation pour aller dans la page de la formation.<br>
 ![img6](https://github.com/user-attachments/assets/f216a9e7-084a-4683-9b4e-cada5574a0e2)
+# Mediatekformation - Partie administration
+
 ## La base de données
 La base de données exploitée par le site est au format MySQL.
 ### Schéma conceptuel de données
