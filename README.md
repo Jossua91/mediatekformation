@@ -54,7 +54,26 @@ La partie centrale est séparée en 2 parties :<br>
 •	La partie droite contient la liste des formations contenues dans la playlist (miniature et titre) avec possibilité de cliquer sur une formation pour aller dans la page de la formation.<br>
 ![img6](https://github.com/user-attachments/assets/f216a9e7-084a-4683-9b4e-cada5574a0e2)
 ## Présentation - Partie administration
-Voici les différentes fonctionnalités présente dans la partie administration :
+Voici les différentes fonctionnalités présente dans la partie administration :<br>
+![img8](https://github.com/user-attachments/assets/bd6a5d09-7ced-40a2-b6f4-1a2181d2cc6d)
+### Page 1 : Page de connexion
+Cette page permet à un administrateur de se connecter pour accéder à la partie administration du site, en renseigner ses identifiants (nom d'utilisateur et mot de passe). Elle est accessible via l'URL se terminant par /login.<br>
+![img9](https://github.com/user-attachments/assets/15026df9-2d26-43c2-9d80-e799f5b2615e)
+### Page 2 : Gestions des formations
+Cette page permet de gérer les formations : il est possible de trier et filtrer la liste, d’ajouter une nouvelle formation grâce à un bouton situé au-dessus de la liste de formations, de visualiser pour chaque formation son nom, sa playlist associée, sa catégorie, sa date de parution, ainsi que ses actions, voir le détail, modifier ou supprimer la formation.<br>
+![img10](https://github.com/user-attachments/assets/d0a0e481-fa50-41d0-8f69-76f0c8c3051b)
+### Page 2.1 : Gestions des formations - Ajout d'une formation
+Cette page est accessible en cliquant sur le bouton "Ajouter" situé au-dessus de la liste des formations. Elle contient un formulaire permettant de renseigner les informations suivantes : date de parution, titre, playlist associée, catégories, description, et l'identifiant de la vidéo. Un bouton permet ensuite d’enregistrer la nouvelle formation.<br>
+![image10](https://github.com/user-attachments/assets/902a4cd0-f561-45ea-9da1-8f7197f62463)
+### Page 2.2 : Gestions des formations - Voir en détail
+Cette page est accessible en cliquant sur "Voir en détail" depuis la liste des formations. Elle affiche toutes les informations de la formation sélectionnée, y compris la vidéo intégrée, le titre, la playlist, les catégories, la date de parution et la description complète.<br>
+![image11](https://github.com/user-attachments/assets/e0347f5c-7637-41b1-999f-2303871d2c93)
+### Page 2.3 : Gestions des formations - Modifier une formation
+Cette page est accessible en cliquant sur "Modifier" depuis la liste des formations. Elle reprend le même formulaire que pour l'ajout d'une formation, avec les informations déjà pré-remplies. Il est possible de modifier la date de parution, le titre, la playlist associée, les catégories, la description et l'identifiant de la vidéo, puis d'enregistrer les modifications.<br>
+![image12](https://github.com/user-attachments/assets/722e0486-c218-418f-9066-dd5660b3c4f7)
+### Page 2.4 : Gestions des formations - Supprimer une formation
+Lorsque l'on clique sur "Supprimer" depuis la liste des formations, une fenêtre pop-up de confirmation s'affiche afin de valider ou annuler la suppression de la formation sélectionnée.<br>
+![image13](https://github.com/user-attachments/assets/068d1ce7-0a40-4f47-bf85-a5a4bd6046bb)
 
 # Autres
 ## La base de données
