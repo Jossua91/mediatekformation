@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7564f8c0-9f31-4fc4-a00b-5611a2fdbc38)# Mediatekformation
+# Mediatekformation
 ## Présentation - Partie utilisateur
 Ce site, développé avec Symfony 6.4, permet d'accéder aux vidéos d'auto-formation proposées par une chaîne de médiathèques et qui sont aussi accessibles sur YouTube.<br> 
 Actuellement, seule la partie front office a été développée. Elle contient les fonctionnalités globales suivantes :<br>
