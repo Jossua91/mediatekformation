@@ -103,6 +103,9 @@ Un formulaire est intégré au-dessus de la liste des catégories. Il permet de 
 Chaque ligne de la liste contient un bouton "Supprimer". Lorsqu’on clique dessus, une fenêtre pop-up de confirmation apparaît pour valider ou annuler la suppression de la catégorie sélectionnée.<br>
 ![image20](https://github.com/user-attachments/assets/5e8b2f85-959b-4f25-97a1-5170cf9376cb)
 
+# Accéssibilité
+Cette application web est disponible à l'adresse url suivante : https://mediatekformation.jossua-creuzet.fr/
+
 # Autres
 ## La base de données
 La base de données exploitée par le site est au format MySQL.
