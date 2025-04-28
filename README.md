@@ -1,4 +1,4 @@
-# Mediatekformation
+![image](https://github.com/user-attachments/assets/7564f8c0-9f31-4fc4-a00b-5611a2fdbc38)# Mediatekformation
 ## Présentation - Partie utilisateur
 Ce site, développé avec Symfony 6.4, permet d'accéder aux vidéos d'auto-formation proposées par une chaîne de médiathèques et qui sont aussi accessibles sur YouTube.<br> 
 Actuellement, seule la partie front office a été développée. Elle contient les fonctionnalités globales suivantes :<br>
@@ -74,6 +74,34 @@ Cette page est accessible en cliquant sur "Modifier" depuis la liste des formati
 ### Page 2.4 : Gestions des formations - Supprimer une formation
 Lorsque l'on clique sur "Supprimer" depuis la liste des formations, une fenêtre pop-up de confirmation s'affiche afin de valider ou annuler la suppression de la formation sélectionnée.<br>
 ![image13](https://github.com/user-attachments/assets/068d1ce7-0a40-4f47-bf85-a5a4bd6046bb)
+
+### Page 3 : Gestion des playlists
+Cette page permet de gérer les playlists de formations : il est possible de trier et filtrer la liste, d’ajouter une nouvelle playlist grâce à un bouton situé au-dessus de la liste, de visualiser pour chaque playlist son nom, le nombre de formations associées, ses catégories, ainsi que ses actions (voir en détail ou modifier).<br>
+![image14](https://github.com/user-attachments/assets/7a3e84ab-4e85-4a96-8185-f71e7ceeee57)
+
+### Page 3.1 : Gestion des playlists - Ajout d'une playlist
+Cette page est accessible en cliquant sur le bouton "Ajouter" situé au-dessus de la liste des playlists. Elle contient un formulaire permettant de renseigner le nom et la description de la nouvelle playlist, puis un bouton permet d’enregistrer la création.<br>
+![image15](https://github.com/user-attachments/assets/d0ff10f6-3679-4317-a4fc-23854705d930)
+
+### Page 3.2 : Gestion des playlists - Voir en détail
+Cette page est accessible en cliquant sur "Voir en détail" depuis la liste des playlists. Elle affiche toutes les informations de la playlist sélectionnée : son titre, sa description, ses catégories associées, ainsi que la liste des formations appartenant à cette playlist.<br>
+![image16](https://github.com/user-attachments/assets/e49400f4-f068-4c6e-9b38-552aa597b7d6)
+
+### Page 3.3 : Gestion des playlists - Modifier une playlist
+Cette page est accessible en cliquant sur "Modifier" depuis la liste des playlists. Elle contient un formulaire avec les informations de la playlist déjà pré-remplies. Il est possible de modifier le titre et la description de la playlist, puis d’enregistrer les modifications.<br>
+![image17](https://github.com/user-attachments/assets/63fc5e80-59da-4da0-8a04-d244511ed25e)
+
+### Page 4 : Gestion des catégories
+Cette page permet de gérer les catégories utilisées pour les formations et les playlists : il est possible d’ajouter une nouvelle catégorie grâce à un formulaire intégré situé au-dessus de la liste, ainsi que de supprimer une catégorie existante. La liste affiche uniquement le nom de chaque catégorie et propose une action de suppression.<br>
+![image18](https://github.com/user-attachments/assets/927ca43a-ab2a-4c34-b613-199427407e6e)
+
+### Page 4.1 : Gestion des catégories - Ajout d'une catégorie
+Un formulaire est intégré au-dessus de la liste des catégories. Il permet de saisir le nom d'une nouvelle catégorie, puis de l'ajouter en cliquant sur un bouton "Ajouter une catégorie".<br>
+![image19](https://github.com/user-attachments/assets/f73b8d8c-cb66-43ec-a06c-70497dea9bed)
+
+### Page 4.2 : Gestion des catégories - Suppression d'une catégorie
+Chaque ligne de la liste contient un bouton "Supprimer". Lorsqu’on clique dessus, une fenêtre pop-up de confirmation apparaît pour valider ou annuler la suppression de la catégorie sélectionnée.<br>
+![image20](https://github.com/user-attachments/assets/5e8b2f85-959b-4f25-97a1-5170cf9376cb)
 
 # Autres
 ## La base de données
